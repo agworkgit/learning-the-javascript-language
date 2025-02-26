@@ -1,46 +1,40 @@
 // iterate over an array
-var pageNames = [
+
+let pages = {
+    first: "Home",
+    second: "About",
+    third: "Contact",
+    fourth: "JavaScript Playground",
+    fifth: "News",
+    sixth: "Blog",
+};
+
+// another kind of loop - for ... in ...
+for (p in pages) {
+    console.log(p, pages[p]); // logs all the page names and their index
+    //          ^       ^
+    //        key       value
+}
+// to note: an order is not guaranteed by the JS spec, if order matters you can't trust the 'for in' loop completely
+// to note: however, this kind of loop can iterate over object properties
+
+console.log("\n");
+
+let pageNames = [
     "Home",
-    "About Us",
-    "Contact Us",
+    "About",
+    "Contact",
     "JavaScript Playground",
     "News",
     "Blog",
-  ];
-  
-  for (let i = 0; i < pageNames.length; i += 1) {
-    console.log(i, pageNames[i]);
-  }
+];
 
-  console.log('\n');
-  
-  for (var p in pageNames) {
-    console.log(p, pageNames[p]);
-  }
+for (page of pageNames) {
+    console.log(page);
+}
 
-  console.log('\n');
-  
-  for (var v of pageNames) {
-    console.log(v);
-  }
+console.log("\n");
 
-  console.log('\n');
-  
-  // iterate over an object
-  var pages = {
-    first: "Home",
-    second: "About Us",
-    third: "Contact Us",
-    fourth: "JavaScript Playground",
-    fifth: "Blog",
-  };
-  for (var p in pages) {
-    if (pages.hasOwnProperty(p)) {
-      console.log(p, pages[p]);
-    }
-  }
-  
-  // More info:
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
-  
+// More info:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
