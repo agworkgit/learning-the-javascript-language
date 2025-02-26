@@ -9,3 +9,9 @@ if (truthValue === true)
 }
 
 // truthValue is true
+
+let myLocation = "Archway";
+let yourLocation = "Cayman Islands";
+
+console.log(myLocation === yourLocation); // false
+
