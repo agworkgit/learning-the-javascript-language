@@ -79,3 +79,4 @@ switch (name.length > 1 && age > 18) {
 */
 
 // In this case switch is not showing it's full value, but it will become very valuable in shortening the syntax of dozens of conditions.
+// Also, bear in mind that if break is not included after you condition is met, the switch statement will cascade until a break is found. This can be beneficial if you want to execute multiple blocks of code, one by one, cascading down until the next break.
