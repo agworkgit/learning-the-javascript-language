@@ -6,4 +6,6 @@
 
 **- Else and Else If:** You can extend `if` statements with `else` and `else if` clauses to handle multiple conditions and execute different blocks of code accordingly.
 
+**`if` `else` statements can be nested inside other `if` `else` statements**
+
 These concepts are fundamental for controlling the flow of your JavaScript programs.
