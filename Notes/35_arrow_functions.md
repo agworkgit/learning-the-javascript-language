@@ -6,4 +6,18 @@
 
 **- Parameter Handling:** If an arrow function has only one parameter, you can omit the parentheses `()` around the parameter.
 
+```
+// Before:
+
+function isEvenOld(num) {
+    return num % 2 === 0;
+}
+
+// After:
+
+let isEven = (num) => {
+    return num % 2 === 0;
+};
+```
+
 These points highlight how arrow functions can make your code more concise and readable.
